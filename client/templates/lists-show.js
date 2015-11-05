@@ -141,6 +141,8 @@ Template.listsShow.events({
       editList(this, template);
     } else if ($(event.target).val() === 'delete') {
       deleteList(this, template);
+    } else if ($(event.target).val() === 'refresh') {
+      refresh(this, template);
     } else {
       toggleListPrivacy(this, template);
     }
